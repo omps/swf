@@ -57,7 +57,7 @@ a {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: url("img/swf_banner.jpg")(120deg, #155799, #159957); }
+  /*background-image: url("img/swf_header.jpg") }*/
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -74,6 +74,10 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; }
+
+.custom_header {
+    align: center;
+}
 
 @media screen and (min-width: 64em) {
   .project-name {
