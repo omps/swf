@@ -20,7 +20,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://formspree.io/oomprakash@gmail.com",
+                url: "https://formspree.io/contactus@sankapwelfarefoundation.org.in",
                 type: "POST",
                 data: {
                     name: name,
