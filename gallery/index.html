@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Sankalp Welfare Foundation - Gallery</title>
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='../vendor/gallery/css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<link href='gallery.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<h1 class="align-center">Event Gallery</h1>
+		<div class="gallery">
+			<a href="swfpic/25.jpg" class="big"><img src="swfpic/thumbnails/25_tn.jpg" alt="" title="Beautiful Image" /></a>
+			<a href="swfpic/26.jpg"><img src="swfpic/thumbnails/26_tn.jpg" alt="" title=""/></a>
+			<a href="swfpic/27.jpg"><img src="swfpic/thumbnails/27_tn.jpg" alt="" title="Beautiful Image"/></a>
+			<a href="swfpic/31.jpg"><img src="swfpic/thumbnails/31_tn.jpg"alt="" title=""/></a>
+
+						<a href="swfpic/36.jpg"><img src="swfpic/thumbnails/36_tn.jpg" alt="" title=""/></a>
+						<a href="swfpic/37.jpg"><img src="swfpic/thumbnails/37_tn.jpg" alt="" title=""/></a>
+									<a href="swfpic/34.jpg" ><img src="swfpic/thumbnails/34_tn.jpg" alt="" title=""/></a>
+			<div class="clear"></div>
+
+			<a href="swfpic/32.jpg"><img src="swfpic/thumbnails/32_tn.jpg" alt="" title=""/></a>
+			<a href="swfpic/33.jpg"><img src="swfpic/thumbnails/33_tn.jpg" alt="" title=""/></a>
+
+			<a href="swfpic/35.jpg"><img src="swfpic/thumbnails/35_tn.jpg" alt="" title=""/></a>
+			<div class="clear"></div>
+
+
+			<div class="clear"></div>
+
+		</div>
+		<!-- <br><br>
+			<p>All images are free availabled on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+			<p>Documentation and download <a target="_blank" href="http://andreknieriem.de/simple-lightbox/">here</a></p> -->
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/gallery/js/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+</body>
+</html>
